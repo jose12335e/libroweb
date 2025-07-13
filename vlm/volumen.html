@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Volúmenes</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de la fuente Inter -->
+     
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Fondo de imagen suave y romántico */
+            background-image: url('/img/Mi\ imagen\ de\ ChatGPT.png'); /* Placeholder de imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* La imagen se queda fija al hacer scroll */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Capa de superposición para mejorar la legibilidad del contenido sobre la imagen de fondo -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4 bg-black/20">
+
+        <!-- Contenedor principal del panel de volúmenes -->
+        <div class="bg-white/50 p-8 rounded-2xl shadow-xl max-w-md w-full transform transition-all duration-300 hover:scale-105 text-center backdrop-blur-sm">
+            <!-- Título del panel -->
+            <h1 class="text-4xl font-bold text-gray-800 mb-8 flex items-center justify-center">
+                <span class="mr-3">📖</span> Lista de volúmenes
+            </h1>
+
+            <!-- Lista de volúmenes -->
+            <ul class="space-y-4 mb-8">
+                <li>
+                    <a href="/cap.vol.l/capitulos.html" class="block w-full bg-pink-200/50 text-purple-900 py-3 px-6 rounded-lg font-semibold text-lg shadow-md hover:bg-pink-300/50 focus:outline-none focus:ring-2 focus:ring-pink-200 focus:ring-opacity-50 transition-all duration-300 transform hover:-translate-y-1">
+                        Volumen I
+                    </a>
+                </li>
+                <li>
+                    <a href="/cap.vol.II/capitulos.html" class="block w-full bg-pink-200/50 text-purple-900 py-3 px-6 rounded-lg font-semibold text-lg shadow-md hover:bg-pink-300/50 focus:outline-none focus:ring-2 focus:ring-pink-200 focus:ring-opacity-50 transition-all duration-300 transform hover:-translate-y-1">
+                        Volumen II
+                    </a>
+                </li>
+                <li>
+                    <a href="/cap.vol.III/capitulos.html" class="block w-full bg-pink-200/50 text-purple-900 py-3 px-6 rounded-lg font-semibold text-lg shadow-md hover:bg-pink-300/50 focus:outline-none focus:ring-2 focus:ring-pink-200 focus:ring-opacity-50 transition-all duration-300 transform hover:-translate-y-1">
+                        Volumen III
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Botón de navegación -->
+            <div class="nav">
+                <button onclick="goToChapter('/hojas.html')" class="bg-amber-100/50 text-amber-900 py-3 px-8 rounded-lg font-semibold text-lg shadow-md hover:bg-amber-200/50 focus:outline-none focus:ring-2 focus:ring-amber-100 focus:ring-opacity-50 transition-all duration-300 transform hover:-translate-y-1">
+                    ← SALIR
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts JavaScript externos -->
+    <script src="/js/auth.js"></script>
+    <script src="/js/cg_hojas.js"></script>
+    <script src="/js/tree.js"></script>
+</body>
+</html>
